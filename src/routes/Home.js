@@ -7,10 +7,10 @@ function Home() {
       <div className="header">
         <ul>
           <li>
-            <Link to="/">How it works</Link>
+            <Link to="./">How it works</Link>
           </li>
           <li>
-            <Link to="/">Gifts</Link>
+            <Link to="./">Gifts</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -19,13 +19,13 @@ function Home() {
             <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="" />
           </li>
           <li>
-            <Link to="/">Login</Link>
+            <Link to="./">Login</Link>
           </li>
           <li>
-            <Link to="/">Members</Link>
+            <Link to="./">Members</Link>
           </li>
           <li>
-            <Link to="/">Contracts</Link>
+            <Link to="./">Contracts</Link>
           </li>
         </ul>
       </div>
