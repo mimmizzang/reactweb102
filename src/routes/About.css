@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.aboutImg {
+  display: block;
+}
+.aboutBody {
+  font-size: 14px;
+  font-family: "맑은 고딕";
+  color: black;
+}
+.top {
+  width: 1000px;
+  height: 500px;
+  margin: 30px auto 0;
+}
+.topLeft {
+  width: 750px;
+  height: 500px;
+  float: left;
+  background-image: url(/public/img/chef_about.png);
+  overflow: hidden;
+}
+.topBox {
+  width: 210px;
+  height: 210px;
+  margin-top: 250px;
+  padding: 20px;
+  background-color: #329632cc;
+}
+.topRight {
+  width: 250px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+}
+.boxAll {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+.boxLeft {
+  width: 750px;
+  height: 500px;
+  float: left;
+}
+.box {
+  width: 210px;
+  height: 210px;
+  float: left;
+  padding: 20px;
+}
+.box:nth-child(2n) {
+  background-color: #e0831f;
+}
+.box:nth-child(2n + 1) {
+  background-color: #775b44;
+}
+.boxRight {
+  width: 210px;
+  height: 460px;
+  padding: 20px;
+  float: left;
+  background-color: #d3b27a;
+}
+.footer {
+  width: 1000px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #f9b1bd;
+}
+.footerLeft {
+  width: 750px;
+  height: 40px;
+  background-color: #837f7f;
+}
+.footerLeft > ul {
+  margin-left: 20px;
+  overflow: hidden;
+}
+.footerLeft > ul > li {
+  float: left;
+  margin: 0 10px;
+  font-size: 11px;
+  line-height: 40px;
+}
+.footerLeft > ul > li:nth-child(2n) {
+  color: orange;
+}
