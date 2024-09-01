@@ -16,7 +16,7 @@ function Home() {
             <Link to="/about">About</Link>
           </li>
           <li className="headerLogo">
-            <img src="img/logo.png" />
+            <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="" />
           </li>
           <li>
             <Link to="/">Login</Link>
@@ -41,25 +41,25 @@ function Home() {
       </div>
       <div className="iconBox">
         <p>
-          <img src="img/icon1.png" />
+          <img src={`${process.env.PUBLIC_URL}/img/icon1.png`} alt="" />
           <br />
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <p>
-          <img src="img/icon2.png" />
+          <img src={`${process.env.PUBLIC_URL}/img/icon2.png`} alt="" />
           <br />
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <p>
-          <img src="img/icon3.png" />
+          <img src={`${process.env.PUBLIC_URL}/img/icon3.png`} alt="" />
           <br />
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <p>
-          <img src="img/icon4.png" />
+          <img src={`${process.env.PUBLIC_URL}/img/icon4.png`} alt="" />
           <br />
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,7 +73,7 @@ function Home() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <img src="img/chef.png" />
+          <img src={`${process.env.PUBLIC_URL}/img/chef.png`} alt="" />
         </div>
       </div>
     </>

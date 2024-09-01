@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <body className="aboutBody">
+    <div className="aboutBody">
       <div className="top">
         <div className="topLeft">
           <div className="topBox">
@@ -19,8 +19,16 @@ function About() {
           </div>
         </div>
         <div className="topRight">
-          <img className="aboutImg" src="img/right1.png" />
-          <img className="aboutImg" src="img/right2.png" />
+          <img
+            className="aboutImg"
+            src={`${process.env.PUBLIC_URL}/img/right1.png`}
+            alt=""
+          />
+          <img
+            className="aboutImg"
+            src={`${process.env.PUBLIC_URL}/img/right2.png`}
+            alt=""
+          />
         </div>
       </div>
       <div className="boxAll">
@@ -65,7 +73,7 @@ function About() {
           </ul>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 
