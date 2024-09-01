@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactweb102/static/css/main.7327fce4.css",
-    "main.js": "/reactweb102/static/js/main.821f05e4.js",
-    "static/media/main.png": "/reactweb102/static/media/main.f924f2a7a00ebd9519e4.png",
-    "static/media/chef_about.png": "/reactweb102/static/media/chef_about.2fd3478e063d524478a8.png",
-    "index.html": "/reactweb102/index.html",
-    "main.7327fce4.css.map": "/reactweb102/static/css/main.7327fce4.css.map",
-    "main.821f05e4.js.map": "/reactweb102/static/js/main.821f05e4.js.map"
+    "main.css": "./static/css/main.b4760772.css",
+    "main.js": "./static/js/main.f3fe968c.js",
+    "static/media/main.png": "./static/media/main.f924f2a7a00ebd9519e4.png",
+    "static/media/chef_about.png": "./static/media/chef_about.2fd3478e063d524478a8.png",
+    "index.html": "./index.html",
+    "main.b4760772.css.map": "./static/css/main.b4760772.css.map",
+    "main.f3fe968c.js.map": "./static/js/main.f3fe968c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7327fce4.css",
-    "static/js/main.821f05e4.js"
+    "static/css/main.b4760772.css",
+    "static/js/main.f3fe968c.js"
   ]
 }
