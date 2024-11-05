@@ -1,6 +1,38 @@
 import "./About.css";
+import AboutBox from "../components/AboutBox";
 
 function About() {
+  const lorem =
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+  const boxes = [
+    {
+      title: <h2>Title</h2>,
+      text: lorem,
+    },
+    {
+      title: <h2>Title</h2>,
+      text: lorem,
+    },
+    {
+      title: "3",
+      text: null,
+    },
+    {
+      title: "4",
+      text: null,
+    },
+    {
+      title: "5",
+      text: null,
+    },
+    {
+      title: "6",
+      text: null,
+    },
+  ];
+  const createBoxes = (arr) => {
+    return arr.map((box) => <AboutBox title={box.title} text={box.text} />);
+  };
   return (
     <div className="aboutBody">
       <div className="top">
@@ -32,28 +64,7 @@ function About() {
         </div>
       </div>
       <div className="boxAll">
-        <div className="boxLeft">
-          <div className="box">
-            <h2>Title</h2>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="box">
-            <h2>Title</h2>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="box">3</div>
-          <div className="box">4</div>
-          <div className="box">5</div>
-          <div className="box">6</div>
-        </div>
+        <div className="boxLeft">{createBoxes(boxes)}</div>
         <div className="boxRight">7</div>
       </div>
       <div className="footer">

@@ -1,7 +1,31 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import HomeBox from "../components/HomeBox";
 
 function Home() {
+  const lorem =
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+  const icons = [
+    {
+      text: lorem,
+      image: "/img/icon1.png",
+    },
+    {
+      text: lorem,
+      image: "/img/icon2.png",
+    },
+    {
+      text: lorem,
+      image: "/img/icon3.png",
+    },
+    {
+      text: lorem,
+      image: "/img/icon4.png",
+    },
+  ];
+  const createIcons = (arr) => {
+    return arr.map((icon) => <HomeBox text={icon.text} image={icon.image} />);
+  };
   return (
     <>
       <div className="header">
@@ -39,32 +63,7 @@ function Home() {
           EASY ANWSER
         </span>
       </div>
-      <div className="iconBox">
-        <p>
-          <img src={`${process.env.PUBLIC_URL}/img/icon1.png`} alt="" />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p>
-          <img src={`${process.env.PUBLIC_URL}/img/icon2.png`} alt="" />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p>
-          <img src={`${process.env.PUBLIC_URL}/img/icon3.png`} alt="" />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p>
-          <img src={`${process.env.PUBLIC_URL}/img/icon4.png`} alt="" />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
+      <div className="iconBox">{createIcons(icons)}</div>
       <div className="chefs">
         <div>
           <p>
